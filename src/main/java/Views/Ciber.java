@@ -26,21 +26,171 @@ public class Ciber extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        panelImage1 = new org.edisoncor.gui.panel.PanelImage();
+        jPanel2 = new javax.swing.JPanel();
+        fieldUsername = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        fieldPassword = new javax.swing.JPasswordField();
+        btnLogin = new javax.swing.JButton();
+        btnClearUsername = new javax.swing.JButton();
+        btnClearPassword = new javax.swing.JButton();
+        panelErrorMessage = new javax.swing.JPanel();
+        lblErrorMessage = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(245, 245, 249));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        panelImage1.setIcon(new javax.swing.ImageIcon("C:\\Users\\hfyh\\OneDrive\\Documentos\\NetBeansProjects\\PonyCiber\\src\\main\\java\\Images\\PonyCyber.png")); // NOI18N
+
+        javax.swing.GroupLayout panelImage1Layout = new javax.swing.GroupLayout(panelImage1);
+        panelImage1.setLayout(panelImage1Layout);
+        panelImage1Layout.setHorizontalGroup(
+            panelImage1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 190, Short.MAX_VALUE)
+        );
+        panelImage1Layout.setVerticalGroup(
+            panelImage1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 170, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(panelImage1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 80, 190, 170));
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        fieldUsername.setBackground(new java.awt.Color(255, 255, 255));
+        fieldUsername.setFont(new java.awt.Font("Roboto Light", 0, 14)); // NOI18N
+        fieldUsername.setForeground(new java.awt.Color(0, 0, 0));
+        fieldUsername.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        fieldUsername.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        jPanel2.add(fieldUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 280, 20));
+
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel1.setText("Usuario");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 280, 30));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 260, 300, 60));
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel3.setText("Contraseña");
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 280, 30));
+
+        fieldPassword.setBackground(new java.awt.Color(255, 255, 255));
+        fieldPassword.setFont(new java.awt.Font("Roboto Light", 0, 14)); // NOI18N
+        fieldPassword.setForeground(new java.awt.Color(0, 0, 0));
+        fieldPassword.setToolTipText("");
+        fieldPassword.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jPanel3.add(fieldPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 280, 20));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 320, 300, 60));
+
+        btnLogin.setBackground(new java.awt.Color(51, 102, 255));
+        btnLogin.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
+        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
+        btnLogin.setText("Iniciar sesión");
+        btnLogin.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 102, 255), 1, true));
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoginActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 490, 120, 40));
+
+        btnClearUsername.setBackground(new java.awt.Color(245, 245, 249));
+        btnClearUsername.setIcon(new javax.swing.ImageIcon("C:\\Users\\hfyh\\OneDrive\\Documentos\\NetBeansProjects\\ProyectoSuscripciones\\src\\main\\java\\Images\\equis.png")); // NOI18N
+        btnClearUsername.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btnClearUsername.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClearUsernameActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnClearUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 270, 40, 40));
+
+        btnClearPassword.setBackground(new java.awt.Color(245, 245, 249));
+        btnClearPassword.setIcon(new javax.swing.ImageIcon("C:\\Users\\hfyh\\OneDrive\\Documentos\\NetBeansProjects\\ProyectoSuscripciones\\src\\main\\java\\Images\\equis.png")); // NOI18N
+        btnClearPassword.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btnClearPassword.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClearPasswordActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnClearPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 330, 40, 40));
+
+        panelErrorMessage.setBackground(new java.awt.Color(255, 102, 102));
+        panelErrorMessage.setEnabled(false);
+
+        lblErrorMessage.setBackground(new java.awt.Color(255, 255, 255));
+        lblErrorMessage.setFont(new java.awt.Font("Roboto Light", 0, 12)); // NOI18N
+        lblErrorMessage.setForeground(new java.awt.Color(51, 51, 51));
+        lblErrorMessage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblErrorMessage.setText("Ingrese todos los datos");
+
+        javax.swing.GroupLayout panelErrorMessageLayout = new javax.swing.GroupLayout(panelErrorMessage);
+        panelErrorMessage.setLayout(panelErrorMessageLayout);
+        panelErrorMessageLayout.setHorizontalGroup(
+            panelErrorMessageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblErrorMessage, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+        );
+        panelErrorMessageLayout.setVerticalGroup(
+            panelErrorMessageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lblErrorMessage, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(panelErrorMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 440, 300, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 555, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 605, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+        // TODO add your handling code here:
+        try {
+            if(fieldUsername.getText().isEmpty() || fieldPassword.getPassword().toString().isEmpty()){
+                lblErrorMessage.setText("Ingrese todos los datos");
+                panelErrorMessage.setVisible(true);
+            } else{
+                panelErrorMessage.setVisible(false);
+                // new ControlPanel().setVisible(true);
+                dispose();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }//GEN-LAST:event_btnLoginActionPerformed
+
+    private void btnClearUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearUsernameActionPerformed
+        // TODO add your handling code here:
+        fieldUsername.setText("");
+    }//GEN-LAST:event_btnClearUsernameActionPerformed
+
+    private void btnClearPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearPasswordActionPerformed
+        // TODO add your handling code here:
+        fieldPassword.setText("");
+    }//GEN-LAST:event_btnClearPasswordActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +228,18 @@ public class Ciber extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnClearPassword;
+    private javax.swing.JButton btnClearUsername;
+    private javax.swing.JButton btnLogin;
+    private javax.swing.JPasswordField fieldPassword;
+    private javax.swing.JTextField fieldUsername;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JLabel lblErrorMessage;
+    private javax.swing.JPanel panelErrorMessage;
+    private org.edisoncor.gui.panel.PanelImage panelImage1;
     // End of variables declaration//GEN-END:variables
 }
